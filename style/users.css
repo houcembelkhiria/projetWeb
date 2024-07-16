@@ -1,0 +1,144 @@
+body {
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 41%, rgba(0,212,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 41%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 41%, rgba(0,212,255,1) 100%);
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+
+.userTable {
+    margin: 0 auto;
+    width: 50%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.userTable th, .userTable td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.userTable th {
+    background-color: #0941b1;
+    color: #fff;
+}
+
+.userTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.userTable tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.userTable td {
+    color: #000;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+a {
+    color: #00d4ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+#delete{
+    color: red;
+    padding: 10px;
+}
+#edit{
+    color: green;
+    padding: 10px;
+
+}
+#create{
+    position: absolute;
+    top: 100px;  
+    right: 100px;  
+    background-color: #06656f;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.form-container {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-container input[type="text"], 
+.form-container input[type="password"],
+.form-container input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-container button[type="submit"] {
+    background-color: #0941b1;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container button[type="submit"]:hover {
+    background-color: #072d8f;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#cancel{
+    background-color: #b8caee;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px;
+    margin-left: 190px;
+
+}

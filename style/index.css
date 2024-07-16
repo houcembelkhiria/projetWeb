@@ -1,0 +1,128 @@
+
+/* reset style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    padding: 0 24px;
+    display: grid;
+    place-items: center;
+       background: rgb(2,0,36);
+      background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 41%, rgba(0,212,255,1) 100%);
+      background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 41%, rgba(0,212,255,1) 100%);
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 41%, rgba(0,212,255,1) 100%);
+      margin: 0;
+  }
+  
+  .sign-up-form {
+    max-width: 850px;
+    width: 100%;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    border-radius: 12px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  /* Form Content */
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+  }
+  
+  /* Heading */
+  .form-heading {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  
+  .form-heading h1 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .form-heading p {
+    font-size: 13px;
+      padding:10px 5px;
+  }
+  
+  /* fields */
+  .input-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    width: 100%;
+  }
+  
+  .input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 1px solid #181824;
+    transition: 300ms;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  input:focus {
+    outline: none;
+    box-shadow: 0 1px 0 0 #6236ff;
+    border-color: #6236ff;
+  }
+  
+  .label {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    align-items: center;
+    transition: 300ms ease;
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    color: #b0b0b0;
+  }
+  
+  /* Label Effect */
+  input:focus + .label,
+  input:not(:placeholder-shown) + .label {
+    transform: translateY(-27px);
+  }
+  
+  input:focus + .label label,
+  input:not(:placeholder-shown) + .label label {
+    font-weight: 500;
+    color: initial;
+  }
+  
+  button {
+    padding: 12px 18px;
+    border: none;
+    align-self: center;
+    background-color: #6236ff;
+    color: #fff;
+    border-radius: 12px;
+    transition: 300ms;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    background-color: #f1f1f1;
+    color: #6236ff;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
