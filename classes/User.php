@@ -1,3 +1,5 @@
+
+
 <?php
 class User {
     private $id;
@@ -11,7 +13,7 @@ class User {
         $this->password = $password;
     }
 
-    // Getter for id
+
     public function getId() {
         return $this->id;
     }
@@ -52,7 +54,7 @@ class User {
     
 }
 
-    // Getter for role
+// not used 
     public function getRole() {
         return $this->role;
     }
